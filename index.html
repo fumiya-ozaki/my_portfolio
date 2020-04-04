@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head><!--head開始-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">                    <!--レスポンシブ-->
+  <link rel="stylesheet" href="css/reset.css">                                              <!--resetcss-->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">    <!--fontawsome-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">                <!--swiper読み込み-->
+  <link rel="stylesheet" href="css/animate.css">                                          <!--css-->
+  <link rel="stylesheet" href="css/style.min.css">                                          <!--css-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  <!--jquery CDN-->
+  <title>Document</title>
+</head><!--head終了-->
+
+<body> <!--body開始-->
+
+  <section class="mv">
+    <!-- Slider main container -->
+    <div class="swiper-container slide1">
+      <h1 class="mv-title" id="mv-title">Welcome to your design</h1>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./image/mv_grandcannion_01.jpeg" alt="グランドキャニオンの写真"></div>
+        <div class="swiper-slide"><img src="./image/mv_grandcannion_02.jpeg" alt="グランドキャニオンの写真"></div>
+        <div class="swiper-slide"><img src="./image/mv_grandcannion_03.jpeg" alt="グランドキャニオンの写真"></div>
+        <div class="swiper-slide"><img src="./image/mv_grandcannion_04.jpeg" alt="グランドキャニオンの写真"></div>
+      </div>
+      <div class="swiper-pagination swiper-pagination-white"></div>
+      <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+  </section>
+
+  <section class="header">
+    <div class="header__wrapper">
+      <a href="# "class="logo">ロゴ</a>
+      <ul class="header-lists">
+        <li class="header-list"><a href="#" class="header-link">トップ<p>Top</p></a></li>
+        <li class="header-list"><a href="#" class="header-link">プロフィール<p>Profile</p></a></li>
+        <li class="header-list"><a href="#" class="header-link">制作実績<p>Production</p></a></li>
+        <li class="header-list"><a href="#" class="header-link">お問い合わせ<p>Contact</p></a></li>
+        <li class="header-list"><a href="#" class="header-link">ブログ<p>Blog</p></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contents">
+    <h1 class="contents__title">Contents</h1>
+    <div class="contents__wrapper">
+      <div class="contents__lists">
+        <a href="#" class="contents__list">
+          <dt>プロフィール</dt>
+          <dd>profile</dd>
+          <img src="./image/contents_profile.svg" alt="プロフィール">
+        </a>
+        <a href="#" class="contents__list">
+          <dt>制作実績</dt>
+          <dd>products</dd>
+          <img src="./image/contents_products.svg" alt="制作実績">
+        </a>
+        <a href="#" class="contents__list">
+          <dt>ブログ</dt>
+          <dd>blog</dd>
+          <img src="./image/contents_blog.svg" alt="ブログ">
+        </a>
+        <a href="#" class="contents__list">
+          <dt>お問い合わせ</dt>
+          <dd>contact</dd>
+          <img src="./image/contents_contact.svg" alt="問い合わせ">
+        </a>
+        <a href="#" class="contents__list">
+          <dt>デモコンテンツ</dt>
+          <dd>demo</dd>
+          <img src="./image/contents_demo.svg" alt="デモ">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="profile">
+    <div class="profile__wrapper">
+      <img class="profile__bgimg" src="./image/profile.jpeg" alt="">
+      <p>親指フリックが作る
+        手のひらの四角い世界<br>
+      欲しいと伝えたいを<br>
+      つなげて価値が生まれたら<br>
+      そんな気持ちでお手伝いをさせて頂きます<br></p>
+      
+        <ul class="icons">
+          <li class="icon">
+            <img src="./image/profile_direction.png" alt="">
+            <h1>DIRECTION</h1><h2<>打ち合わせ</h2>
+          </li>
+          <li class="icon">
+            <img src="./image/profile_design.png" alt="">
+            <h1>DESIGN</h1><h2>デザイン</h2></li>
+          <li class="icon">
+            <img src="./image/profile_keyboard.png" alt="">
+            <h1>CODING</h1><h2>制作</h2></li>
+        </ul>
+      </div>
+    </section>
+
+  <section class="gallery">
+    <h1>Gallery</h1>
+    <!-- Swiper -->
+  <div class="swiper-container slide2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(./image/nature_img_01.jpeg)"></div>
+      <div class="swiper-slide" style="background-image:url(./image/nature_img_02.jpeg)"></div>
+      <div class="swiper-slide" style="background-image:url(./image/nature_img_03.jpeg)"></div>
+      <div class="swiper-slide" style="background-image:url(./image/nature_img_04.jpeg)"></div>
+      <div class="swiper-slide" style="background-image:url(./image/nature_img_01.jpeg)"></div>
+      <div class="swiper-slide" style="background-image:url(./image/nature_img_02.jpeg)"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  </section>
+
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> <!--swiper読み込み-->
+  <script src="js/jquery.lettering.js"></script>   <!--javascript読み込み-->
+  <script src="js/jquery.textillate.js"></script>   <!--javascript読み込み-->
+  <script src="js/script.js"></script>   <!--javascript読み込み-->
+</body><!--body終了-->
+
+</html>
