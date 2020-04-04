@@ -23,7 +23,6 @@ $b:blue;
 
 // pc start***********************************************************************************
 @media screen and (min-width:960px) {
-  // mv
   .mv{
     position: relative;
     .slide1{
@@ -56,8 +55,14 @@ $b:blue;
       }
     }
   }
-  
+  .sticky-container{
+    position: relative;
   .header{
+    background-color:rgba(255,255,255,0.8);
+    z-index: 10;
+    position:sticky;
+    position: -webkit-sticky;
+    top:0;
     // background-color: blue;
     &__wrapper{
       // background-color: red;
@@ -83,7 +88,6 @@ $b:blue;
       }
     }
   }
-
   .contents{
     // background-color: red;
     width: 80%;
@@ -163,6 +167,58 @@ $b:blue;
       }
     }
   }
+
+  .products{
+    .container{
+      width: 80%;
+      margin: 0 auto;
+      // max-width: 1000px;
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr ;
+      grid-gap:2rem;
+      img{
+        display: block;
+        width: 100%;
+      }
+      .item:nth-child(1){
+        -ms-grid-row: 1;
+        -ms-grid-column:1;
+      }
+      .item:nth-child(2){
+        -ms-grid-row: 1;
+        -ms-grid-column:2;
+      }
+      .item:nth-child(3){
+        -ms-grid-row: 1;
+        -ms-grid-column:3;
+      }
+      .item:nth-child(4){
+        -ms-grid-row: 2;
+        -ms-grid-column:1;
+      }
+      .item:nth-child(5){
+        -ms-grid-row: 2;
+        -ms-grid-column:2;
+      }
+      .item:nth-child(6){
+        -ms-grid-row: 2;
+        -ms-grid-column:3;
+      }
+      .item:nth-child(7){
+        -ms-grid-row: 3;
+        -ms-grid-column:1;
+      }
+      .item:nth-child(8){
+        -ms-grid-row: 3;
+        -ms-grid-column:2;
+      }
+    }
+  }
+
   
 .gallery{
   .slide2 {
@@ -177,6 +233,7 @@ $b:blue;
     }
   }
 }
+}
   
 } //PC end------------------------------------------------------------------------------------
 
@@ -187,6 +244,7 @@ $b:blue;
 
 // tablet end start***************************************************************************
 @media screen and (min-width:481px) and (max-width:959px){
+  
 
 }//tablet end---------------------------------------------------------------------------------
 

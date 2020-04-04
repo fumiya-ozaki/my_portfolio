@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head><!--head開始-->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">                    <!--レスポンシブ-->
-  <link rel="stylesheet" href="css/reset.css">                                              <!--resetcss-->
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">    <!--fontawsome-->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">                <!--swiper読み込み-->
-  <link rel="stylesheet" href="css/animate.css">                                          <!--css-->
-  <link rel="stylesheet" href="css/style.min.css">                                          <!--css-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  <!--jquery CDN-->
-  <title>Document</title>
-</head><!--head終了-->
 
-<body> <!--body開始-->
+<head>
+  <!--head開始-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--レスポンシブ-->
+  <link rel="stylesheet" href="css/reset.css">
+  <!--resetcss-->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!--fontawsome-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <!--swiper読み込み-->
+  <link rel="stylesheet" href="css/animate.css">
+  <!--css-->
+  <link rel="stylesheet" href="css/style.min.css">
+  <!--css-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!--jquery CDN-->
+  <title>Document</title>
+</head>
+<!--head終了-->
+
+<body>
+  <!--body開始-->
 
   <section class="mv">
     <!-- Slider main container -->
@@ -31,9 +42,10 @@
     </div>
   </section>
 
+  <div class="sticky-container">
   <section class="header">
     <div class="header__wrapper">
-      <a href="# "class="logo">ロゴ</a>
+      <a href="# " class="logo">ロゴ</a>
       <ul class="header-lists">
         <li class="header-list"><a href="#" class="header-link">トップ<p>Top</p></a></li>
         <li class="header-list"><a href="#" class="header-link">プロフィール<p>Profile</p></a></li>
@@ -80,48 +92,72 @@
   <section class="profile">
     <div class="profile__wrapper">
       <img class="profile__bgimg" src="./image/profile.jpeg" alt="">
-      <p>親指フリックが作る
-        手のひらの四角い世界<br>
-      欲しいと伝えたいを<br>
-      つなげて価値が生まれたら<br>
-      そんな気持ちでお手伝いをさせて頂きます<br></p>
-      
-        <ul class="icons">
-          <li class="icon">
-            <img src="./image/profile_direction.png" alt="">
-            <h1>DIRECTION</h1><h2<>打ち合わせ</h2>
-          </li>
-          <li class="icon">
-            <img src="./image/profile_design.png" alt="">
-            <h1>DESIGN</h1><h2>デザイン</h2></li>
-          <li class="icon">
-            <img src="./image/profile_keyboard.png" alt="">
-            <h1>CODING</h1><h2>制作</h2></li>
-        </ul>
-      </div>
-    </section>
+      <p>手のひらの四角い世界<br>
+        欲しいと伝えたいを<br>
+        つなげて価値が生まれたら<br>
+        そんな気持ちでお手伝いをさせて頂きます<br></p>
+      <ul class="icons">
+        <li class="icon">
+          <img src="./image/profile_direction.png" alt="">
+          <h1>DIRECTION</h1>
+          <h2<>打ち合わせ</h2>
+        </li>
+        <li class="icon">
+          <img src="./image/profile_design.png" alt="">
+          <h1>DESIGN</h1>
+          <h2>デザイン</h2>
+        </li>
+        <li class="icon">
+          <img src="./image/profile_keyboard.png" alt="">
+          <h1>CODING</h1>
+          <h2>制作</h2>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="products">
+    <h1>products</h1>
+    <ul class="container">
+      <li class="item"><img src="./image/season_01.jpeg" alt=""></li>
+      <li class="item"><img src="./image/season_02.jpeg" alt=""></li>
+      <li class="item"><img src="./image/season_03.jpeg" alt=""></li>
+      <li class="item"><img src="./image/season_04.jpeg" alt=""></li>
+      <li class="item"><img src="./image/season_01.jpeg" alt=""></li>
+      <li class="item"><img src="./image/season_02.jpeg" alt=""></li>
+      <li class="item"><img src="./image/season_03.jpeg" alt=""></li>
+      <li class="item"><img src="./image/season_04.jpeg" alt=""></li>
+    </ul>
+  </section>
+
 
   <section class="gallery">
     <h1>Gallery</h1>
     <!-- Swiper -->
-  <div class="swiper-container slide2">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image:url(./image/nature_img_01.jpeg)"></div>
-      <div class="swiper-slide" style="background-image:url(./image/nature_img_02.jpeg)"></div>
-      <div class="swiper-slide" style="background-image:url(./image/nature_img_03.jpeg)"></div>
-      <div class="swiper-slide" style="background-image:url(./image/nature_img_04.jpeg)"></div>
-      <div class="swiper-slide" style="background-image:url(./image/nature_img_01.jpeg)"></div>
-      <div class="swiper-slide" style="background-image:url(./image/nature_img_02.jpeg)"></div>
+    <div class="swiper-container slide2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url(./image/nature_img_01.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(./image/nature_img_02.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(./image/nature_img_03.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(./image/nature_img_04.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(./image/nature_img_01.jpeg)"></div>
+        <div class="swiper-slide" style="background-image:url(./image/nature_img_02.jpeg)"></div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
     </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
   </section>
+  </div>
 
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> <!--swiper読み込み-->
-  <script src="js/jquery.lettering.js"></script>   <!--javascript読み込み-->
-  <script src="js/jquery.textillate.js"></script>   <!--javascript読み込み-->
-  <script src="js/script.js"></script>   <!--javascript読み込み-->
-</body><!--body終了-->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <!--swiper読み込み-->
+  <script src="js/jquery.lettering.js"></script>
+  <!--javascript読み込み-->
+  <script src="js/jquery.textillate.js"></script>
+  <!--javascript読み込み-->
+  <script src="js/script.js"></script>
+  <!--javascript読み込み-->
+</body>
+<!--body終了-->
 
 </html>
