@@ -27,20 +27,23 @@
 
   <section class="mv">
     <!-- Slider main container -->
-    <div class="swiper-container slide1">
-      <h1 class="mv-title" id="mv-title">Welcome to next design</h1>
-      <p class="mv-text01">FUMIYA OZAKI<br>WEB-Design<br></p>
-      <p class="mv-text02">THANK YOU FOR COMING <br>LETS WORK TOGETHER!</p>
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="./image/mv_grandcannion_01.jpeg" alt="グランドキャニオンの写真"></div>
-        <div class="swiper-slide"><img src="./image/mv_grandcannion_02.jpeg" alt="グランドキャニオンの写真"></div>
-        <div class="swiper-slide"><img src="./image/mv_grandcannion_03.jpeg" alt="グランドキャニオンの写真"></div>
-        <div class="swiper-slide"><img src="./image/mv_grandcannion_04.jpeg" alt="グランドキャニオンの写真"></div>
-      </div>
-      <!-- <div class="swiper-pagination swiper-pagination-white"></div> -->
-      <!-- <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div> -->
-      <!-- <div class="swiper-scrollbar"></div> -->
+    <div class="mv-wrapper">
+      <h1 class="mv-message" id="mv-message">Welcome to next design</h1>
+      <p class="mv-text01" id="mv-text01">
+        FUMIYA OZAKI<br>
+        WEBDESIGN<br>
+        19830414<br>
+        JAPAN<br>
+        MA<br>
+        A<br>
+      </p>
+
+      <p class="mv-text02">
+        <span>DESIGN</span> SITE/GRAPHIC/WordPress<br>
+        <span>CODING</span> HTML5/CSS/JavaScript/jQuery <br>
+        DOMAIN&SERVER/SET/MAINTENANCE/CONSULTING
+      </p>
+      <p class="mv-arrow"><img src="./image/slider_under_arrow.svg" alt=""></p>
     </div>
   </section>
 
@@ -50,8 +53,8 @@
       <a href="# " class="logo"><img src="./image/header_logo.png" alt="ロゴ"></a>
       <ul class="header-lists">
         <li class="header-list"><a href="#" class="header-link">トップ<p>Top</p></a></li>
-        <li class="header-list"><a href="#" class="header-link">プロフィール<p>Profile</p></a></li>
-        <li class="header-list"><a href="#" class="header-link">制作実績<p>Production</p></a></li>
+        <li class="header-list"><a href="#profile" class="header-link">プロフィール<p>Profile</p></a></li>
+        <li class="header-list"><a href="#products" class="header-link">制作実績<p>Products</p></a></li>
         <li class="header-list"><a href="#" class="header-link">お問い合わせ<p>Contact</p></a></li>
         <li class="header-list"><a href="#" class="header-link">ブログ<p>Blog</p></a></li>
       </ul>
@@ -63,12 +66,12 @@
     <div class="bcg"></div>
     <div class="contents__wrapper">
       <div class="contents__lists">
-        <a href="#" class="contents__list">
+        <a href="#profile" class="contents__list">
           <dt>プロフィール</dt>
           <dd>profile</dd>
           <img src="./image/contents_profile.svg" alt="プロフィール">
         </a>
-        <a href="#" class="contents__list">
+        <a href="#products" class="contents__list">
           <dt>制作実績</dt>
           <dd>products</dd>
           <img src="./image/contents_products.svg" alt="制作実績">
@@ -92,7 +95,7 @@
     </div>
   </section>
 
-  <div class="profile">
+  <div class="profile" id="profile">
     <div class="profile__wrapper">
       <img class="profile__bgimg" src="./image/profile.jpeg" alt="">
       <p class="profile__text">
@@ -119,7 +122,7 @@
     </div>
   </div>
 
-  <section class="products fadeIn">
+  <section class="products fadeIn" id="products">
     <ul class="container">
       <h1>products</h1>
       <div class="group" id="group01">

@@ -1,33 +1,7 @@
 $(document).ready(function () {
-var mySwiper = new Swiper ('.slide1', {
-  // Optional parameters
-  autoplay:{delay:100,}, //自動再生
-  effect: 'fade',
-  loop: true,
-  speed:4000, //スクロールスピード小さいほど早い
-  // direction: 'vertical', //スクロール方向 縦
-  // spaceBetween: 1000, //写真の間の余白
-
-  // pagination //
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-})
 
 //textillate
-$('#mv-title').textillate({
+$('#mv-message').textillate({
   loop:true,
   in:{
     effect: 'fadeInDown',
@@ -39,7 +13,6 @@ $('#mv-title').textillate({
     delay: 50,
     shuffle: true,
   }
-
 });
 
 //swiper

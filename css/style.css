@@ -23,7 +23,6 @@
 
 * {
   font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
-  letter-spacing: 0.4rem;
 }
 
 a {
@@ -37,13 +36,16 @@ section {
 
 @media screen and (min-width: 960px) {
   .mv {
+    letter-spacing: 0.3rem;
     position: relative;
   }
-  .mv .slide1 {
+  .mv .mv-wrapper {
+    position: relative;
+    margin: 0 auto;
     width: 80%;
     height: 100vh;
   }
-  .mv .slide1 .mv-title {
+  .mv .mv-wrapper .mv-message {
     position: absolute;
     z-index: 3;
     top: 1.5rem;
@@ -57,7 +59,7 @@ section {
     line-height: 1rem;
     padding: 1rem 0 1rem 3rem;
   }
-  .mv .slide1 .mv-text01 {
+  .mv .mv-wrapper .mv-text01 {
     position: absolute;
     top: 4.5rem;
     left: 3rem;
@@ -65,26 +67,37 @@ section {
     color: black;
     font-size: 3rem;
   }
-  .mv .slide1 .mv-text02 {
+  .mv .mv-wrapper .mv-text02 {
     position: absolute;
-    bottom: 1.5rem;
-    right: 1rem;
+    bottom: 20%;
+    right: 3rem;
     z-index: 3;
     color: black;
-    font-size: 1.5rem;
     text-align: right;
+    line-height: 2.5;
   }
-  .mv .slide1 .swiper-wrapper {
-    opacity: 0.7;
-    position: relative;
+  .mv .mv-wrapper .mv-text02 span {
+    color: red;
+    font-weight: bold;
   }
-  .mv .slide1 .swiper-wrapper .swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .mv .mv-wrapper .mv-arrow {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5%;
+    animation: flow 1s ease 0s infinite;
   }
-  .mv .slide1 .swiper-button-prev, .mv .slide1 .swiper-button-next {
-    color: white;
+  @keyframes flow {
+    0% {
+      transform: translate(-50%, 15px);
+    }
+    50% {
+      transform: translate(-50%, 0);
+    }
+    100% {
+      transform: translate(-50%, 15px);
+    }
   }
   .sticky-container {
     position: relative;
@@ -152,6 +165,7 @@ section {
     overflow: hidden;
   }
   .sticky-container .contents__title {
+    letter-spacing: 0.4rem;
     position: absolute;
     z-index: 3;
     font-size: 2rem;
@@ -220,6 +234,7 @@ section {
     z-index: 0;
   }
   .sticky-container .profile__wrapper p {
+    letter-spacing: 0.4rem;
     line-height: 1.5;
     font-size: 1.3rem;
     text-align: center;
@@ -249,7 +264,7 @@ section {
   }
   .sticky-container .profile__wrapper .icons .icon img {
     margin-top: 1rem;
-    width: 40%;
+    width: 30%;
   }
   .sticky-container .products {
     padding: 0;
@@ -259,6 +274,7 @@ section {
   .sticky-container .products .container h1 {
     font-size: 2rem;
     padding-left: 1rem;
+    letter-spacing: 0.4rem;
   }
   .sticky-container .products .container .group {
     display: flex;
@@ -306,6 +322,9 @@ section {
     width: 80%;
     margin: 0 auto;
   }
+  .sticky-container .gallery h1 {
+    letter-spacing: 0.4rem;
+  }
   .sticky-container .gallery .slide2 {
     width: 100%;
     padding-top: 50px;
@@ -322,6 +341,9 @@ section {
   }
   .sticky-container .gallery h1 {
     font-size: 2rem;
+  }
+  .sticky-container footer {
+    letter-spacing: 0.4rem;
   }
   .sticky-container footer .wrapper {
     background-color: black;
