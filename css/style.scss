@@ -6,7 +6,12 @@
 // <br class="br-pc" /> PC/tabletの改行
 @media screen and (max-width: 480px){	.br-pc { display:none; } .br-sp { display:block; } }
 // <br class="br-sp" /> smartphoneの改行
-*{font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;}
+*{
+  font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+  letter-spacing: 0.4rem;
+  }
+  
+
 a{text-decoration: none; color:black}
 section{padding: 1rem;}
 
@@ -26,22 +31,44 @@ $b:blue;
   .mv{
     position: relative;
     .slide1{
-      width: 100%;
+      width: 80%;
       height: 100vh;
       .mv-title{
         position: absolute;
-        z-index: 10;
-        top: 50%;
+        z-index: 3;
+        top: 1.5rem;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
-        // font-family: 'Gill Sans';
-        font-size: 100px;
-        background-color:rgba(167, 164, 164, 0.92);
+        font-size: 1.5rem;
+        background-color:black;
         color: white;
         width: 100%;
-        text-align: center;
+        text-align: left;
+        line-height: 1rem;
+        padding:1rem 0 1rem 3rem ;
       }
+      .mv-text01{
+        position: absolute;
+        top:4.5rem;
+        left: 3rem;
+        z-index: 3;
+        color: black;
+        font-size: 3rem;
+      }
+      .mv-text02{
+        position: absolute;
+        bottom:1.5rem;
+        right: 1rem;
+        z-index: 3;
+        color: black;
+        font-size: 1.5rem;
+        text-align: right;
+
+      }
+      
       .swiper-wrapper{
+        opacity: 0.7;
+        position: relative;
         .swiper-slide{
           img{
             width: 100%;
@@ -55,11 +82,13 @@ $b:blue;
       }
     }
   }
-  .sticky-container{
+.sticky-container{
     position: relative;
   .header{
+    width: 80%;
+    margin: 0 auto;
     background-color:rgba(255,255,255,0.8);
-    z-index: 10;
+    z-index: 3;
     position:sticky;
     position: -webkit-sticky;
     top:0;
@@ -67,23 +96,51 @@ $b:blue;
     &__wrapper{
       // background-color: red;
       display: flex;
-      padding: 1rem;
+      padding: 0.3rem;
       justify-content: space-between;
       .logo{
-        background-color: brown;
+        // background-color: brown;
+        img{
+          display: block;
+          margin-left:0;
+          width: 70%;
+        }
+        img:hover{
+          opacity: 0.6;
+        }
       }
       .header-lists{
         .header-list{
           // background-color: green;
+          position: relative; //hoverに設定
           text-align: center;
           display: inline-block;
-          p{font-size: 0.7rem;}
-          a{display: block;
+          margin-left: 1rem;
+          p{
+            font-size: 0.7rem;
+            letter-spacing: normal;
+          }
+          a{
+            display: block;
+            letter-spacing: normal;
           }
           a:hover{
-            opacity: 0.7;
-            background-color: gray;
+            opacity: 0.5;
+            // background-color: gray;
           }
+          a:hover:before {
+            content: '';
+            position: absolute;//親要素に固定
+            left: 50%; //親要素の左端から50%(中央寄)
+            bottom: -10px;/*線の上下位置*/
+            width: 40px;/*線の長さ*/
+            height: 2px;/*線の太さ*/
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);/*位置調整*/
+            background-color:black;/*線の色*/
+            // border-radius: 2px;/*線の丸み*/
+          }
+          
         }
       }
     }
@@ -92,24 +149,36 @@ $b:blue;
     // background-color: red;
     width: 80%;
     margin: 0 auto;
+    padding: 60px 0 100px 0;
+    position: relative;
+    overflow: hidden;
     &__title{
+      position: absolute;
+      z-index: 3;
       font-size: 2rem;
+      color: white;
+      margin-left: 1rem;
     }
     &__wrapper{
+      position: relative;
+      z-index: 2;
       .contents__lists{
+        margin: 0 auto;
+        width: 90%;
+        margin-top: 2rem;
         padding: 2rem 0;
         display: flex;
         justify-content: space-between;
         .contents__list{
-          border: gray solid 3px;
-          border-radius: 5%;
-          // background-color: blue;
-          width: 25%;
+          border-radius: 3%;
+          background-color: white;
+          width: 15%;
           display: flex;
           flex-direction: column;
           text-align: center;
           margin: 1rem;
           dt{
+            letter-spacing: normal;
             padding-top: 1rem;
           }
           dd{
@@ -121,12 +190,30 @@ $b:blue;
             padding-bottom: 1rem;
           }
         }
+        .contents__list:hover{
+          transform: scale(1.1);
+        }
       }
     }
+    .bcg{
+      background-image: url("../image/profile_bgimg_6.jpeg");
+      background-size: cover;
+      position: absolute;
+      width: 100%;
+      height: 140%;
+      top: 0;
+      z-index: 1;
+      opacity: 0.8;
+    }
   }
+
   .profile{
+    margin:1rem 0;
     &__wrapper{
-    position: relative;
+      width: 80%;
+      margin: 0 auto;
+      position: relative;
+      img{width: 100%;}
       .profile__bgimg{
         width: 100%;
         z-index: 0;
@@ -169,72 +256,106 @@ $b:blue;
   }
 
   .products{
+    padding: 0;
+    // background-color:rgb(226, 223, 223);
+    width: 80%;
+    margin: 0 auto;
     .container{
-      width: 80%;
-      margin: 0 auto;
-      // max-width: 1000px;
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-      -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr ;
-      grid-gap:2rem;
-      img{
-        display: block;
-        width: 100%;
+      // background-color: red;
+      h1{
+        font-size: 2rem;
+        padding-left: 1rem;
       }
-      .item:nth-child(1){
-        -ms-grid-row: 1;
-        -ms-grid-column:1;
-      }
-      .item:nth-child(2){
-        -ms-grid-row: 1;
-        -ms-grid-column:2;
-      }
-      .item:nth-child(3){
-        -ms-grid-row: 1;
-        -ms-grid-column:3;
-      }
-      .item:nth-child(4){
-        -ms-grid-row: 2;
-        -ms-grid-column:1;
-      }
-      .item:nth-child(5){
-        -ms-grid-row: 2;
-        -ms-grid-column:2;
-      }
-      .item:nth-child(6){
-        -ms-grid-row: 2;
-        -ms-grid-column:3;
-      }
-      .item:nth-child(7){
-        -ms-grid-row: 3;
-        -ms-grid-column:1;
-      }
-      .item:nth-child(8){
-        -ms-grid-row: 3;
-        -ms-grid-column:2;
+      .group{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 2rem 0;
+        .item{
+          opacity: 0;
+          width: 30%;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          transform: translateY(30px);
+          transition: all 1s ease-out;
+          margin: 1rem 0;
+          .detail{
+            display: none ;
+            position: absolute;
+            background-color: white;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            p{
+              margin-top: 35%;
+            }
+          }
+        }
+        .fade-in{
+          opacity: 1;
+          transform: translateY(0);
+          transition: all 1s ease-out;
+        }
+        a:hover .detail{
+          display: block;
+          opacity: 0.8;
+        }
+        img{
+          display: block;
+          width: 100%;
+        }
       }
     }
   }
 
-  
-.gallery{
-  .slide2 {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 300px;
-      height: 300px;
+  .gallery{
+    width: 80%;
+    margin: 0 auto;
+    .slide2 {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+      }
+      .swiper-slide:hover{
+        opacity: 0.5;
+      }
+    }
+    h1{
+      font-size: 2rem;
     }
   }
-}
-}
-  
+
+  footer{
+    .wrapper{
+      background-color: black;
+      color: white;
+      margin: 0 auto;
+      padding: 1rem;
+      width: 80%;
+      text-align: right;
+      .icons{
+        width: 15%;
+        margin: 1rem 0 1rem auto;
+        display: flex;
+        justify-content: space-between;
+      }
+      a{
+        img{
+          width: 30px;
+        }
+      }
+    }
+  }
+
+}//sticky-container
 } //PC end------------------------------------------------------------------------------------
 
 // smart phone start**************************************************************************
